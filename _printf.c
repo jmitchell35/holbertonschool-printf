@@ -6,7 +6,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int i = 0, size = 0, j = 0;
+	int format_iter = 0, size = 0, print_ops_iter = 0;
 	print_t print_ops = {
 		{"c", print_char},
 		{"s", print_str},
@@ -15,23 +15,24 @@ int _printf(const char *format, ...)
 	va_list args;
 
 	va_start(args, format);
-	while (format[i])
+	while (format[format_iter])
 	{
-	if (format[i] == '%')
+	if (format[format_iter] == '%')
 	{
-		for (j = 0; j < 2; j++)
+		for (print_ops_iter = 0; print_ops_iter < 2; print_ops_iter++)
 		{
-			if (format[i + 1] == print_ops[j].specifier)
+			if (format[format_iter + 1] == print_ops[print_ops_iter].specifier)
 			{
-			print_ops[j].ptr_to_print_func(args, void *);
-			i++;
+			print_ops[print_ops_iter].ptr_to_print_func(args, void *);
+			format_iter++;
 			}
 		}
-	_putchar(format[i]);
-	i++;
+	_putchar(format[format_iter]);
+	format_iter++;
 	}
 	else
-		_putchar(format[i]);
-	i++;
+		_putchar(format[format_iter]);
+	format_iter++;
 	}
+	va_end(args);
 }
