@@ -6,6 +6,7 @@
 #include<stdarg.h>
 
 int _putchar(char c);
+int (*get_print_op(char *s)(char *));
 int _printf(const char *format, ...);
 
 /**
