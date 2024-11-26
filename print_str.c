@@ -15,7 +15,7 @@ int print_str(char *str)
 
 	while (*str)
 	{
-		length += _putchar(*str);
+		length += _putchar(str);
 		str++;
 	}
 	return (length);
