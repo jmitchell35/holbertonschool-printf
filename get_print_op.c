@@ -5,7 +5,7 @@
   * @s: ptr to str (char *)
   * Return: ptr_to_func
   */
-int (*get_print_op(char *s)(char *))
+int (*get_print_op(char *s))(char *)
 {
 	print_t print_ops = {
 		{"c", print_char},
