@@ -19,7 +19,7 @@ int _printf(const char *format, ...);
 typedef struct print_t
 {
 	char *specifier;
-	void (*ptr_to_print_func)(va_list args);
+	int (*ptr_to_print_func)(char *);
 } print_t;
 
 #endif
