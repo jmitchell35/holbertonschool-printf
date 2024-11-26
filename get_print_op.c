@@ -7,7 +7,7 @@
   */
 int (*get_print_op(char *s))(char *)
 {
-	print_t print_ops = {
+	print_t print_ops[] = {
 		{"c", _putchar},
 		{"s", print_str},
 		{NULL, NULL}
@@ -16,7 +16,7 @@ int (*get_print_op(char *s))(char *)
 
 	for (print_ops_iter = 0; print_ops_iter < 2; print_ops_iter++)
 		{
-			if (*s == print_ops[print_ops_iter].specifier)
+			if (*s == *print_ops[print_ops_iter].specifier)
 			{
 			return (print_ops[print_ops_iter].ptr_to_print_func);
 			}
