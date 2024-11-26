@@ -10,6 +10,7 @@ int _putchar(char *c);
 int print_str(char *str);
 int (*get_print_op(char *s))(char *);
 int _printf(const char *format, ...);
+int _strlen(char *s);
 
 /**
  *struct print_t - associer specifier au pointeur de fonction
