@@ -7,6 +7,7 @@
 #include<unistd.h>
 
 int _putchar(char c);
+int print_str(char *str);
 int (*get_print_op(char *s)(char *));
 int _printf(const char *format, ...);
 
