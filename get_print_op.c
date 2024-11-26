@@ -8,7 +8,7 @@
 int (*get_print_op(char *s))(char *)
 {
 	print_t print_ops = {
-		{"c", print_char},
+		{"c", _putchar},
 		{"s", print_str},
 		{NULL, NULL}
 	};
