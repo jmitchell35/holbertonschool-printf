@@ -6,7 +6,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int format_iter = 0, size = 0, print_ops_iter = 0;
+	int format_iter = 0, length = 0, print_ops_iter = 0;
 	print_t print_ops = {
 		{"c", print_char},
 		{"s", print_str},
@@ -29,10 +29,15 @@ int _printf(const char *format, ...)
 		}
 	_putchar(format[format_iter]);
 	format_iter++;
+	length++;
 	}
 	else
+	{
 		_putchar(format[format_iter]);
+		length++;
+	}
 	format_iter++;
 	}
 	va_end(args);
+	return (length);
 }
