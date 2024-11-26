@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *_printf - 
- *@format:
- *Return:
+ *_printf - prints string interpreting included specifiers (variadic args)
+ *@format: pointer to format string
+ *Return: length of printed string
  */
 int _printf(const char *format, ...)
 {
