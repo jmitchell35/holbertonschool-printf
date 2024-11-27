@@ -14,9 +14,18 @@ int print_str(va_list args)
 	int length = 0;
 	char *str = va_arg(args, char *);
 
+	if (str == NULL)
+	{
+		str = "(null)";
+	}
+
 	while (*str)
 	{
-		length += _putchar(*str);
+		if (_putchar(*str) == -1)
+		{
+			return (-1);
+		}
+		length++;
 		str++;
 	}
 	return (length);
