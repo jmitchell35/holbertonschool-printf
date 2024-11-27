@@ -6,7 +6,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int format_iter = 0, length = 0;
+	int format_iter = 0, printed_length = 0;
 	va_list args;
 	int (*ptr_to_func)(va_list);
 
@@ -18,16 +18,16 @@ int _printf(const char *format, ...)
 	ptr_to_func = get_print_op(format[format_iter + 1]);
 	if (ptr_to_func != NULL)
 	{
-		length += ptr_to_func(args);
+		printed_length += ptr_to_func(args);
 		format_iter++;
 	}
-	length += _putchar(format[format_iter]);
+	printed_length += _putchar(format[format_iter]);
 	format_iter++;
 	}
 	else
-		length += _putchar(format[format_iter]);
+		printed_length += _putchar(format[format_iter]);
 	format_iter++;
 	}
 	va_end(args);
-	return (length);
+	return (printed_length);
 }
