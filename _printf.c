@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-			error_flag = _putchar(format[format_iter]);
+				error_flag = _putchar(format[format_iter]);
 				if (error_flag == -1)
 					return (-1);
 			printed_length++;
@@ -44,3 +44,4 @@ int _printf(const char *format, ...)
 	va_end(args);
 	return (printed_length);
 }
+
