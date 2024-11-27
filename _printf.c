@@ -8,7 +8,7 @@ int _printf(const char *format, ...)
 {
 	int format_iter = 0, length = 0;
 	va_list args;
-	int (*ptr_to_func(va_list));
+	int (*ptr_to_func)(va_list);
 
 	va_start(args, format);
 	while (format[format_iter])
