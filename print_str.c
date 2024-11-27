@@ -4,7 +4,7 @@
 /**
 * print_str - prints string to std output
 *
-* @str: ptr to string
+* @args: va_list type parameter
 *
 * Return: number of bytes printed
 */
@@ -12,7 +12,7 @@
 int print_str(va_list args)
 {
 	int length = 0;
-	char *str = va_args(args, char *);
+	char *str = va_arg(args, char *);
 
 	while (*str)
 	{
