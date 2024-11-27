@@ -6,10 +6,12 @@
  */
 int _printf(const char *format, ...)
 {
-	int format_iter = 0, printed_length = 0;
+	int format_iter = 0, printed_length = 0, error_flag;
 	va_list args;
 	int (*ptr_to_func)(va_list);
 
+	if (format == NULL)
+		return (-1);
 	va_start(args, format);
 	while (format[format_iter])
 	{
@@ -18,12 +20,21 @@ int _printf(const char *format, ...)
 			ptr_to_func = get_print_op(format[format_iter + 1]);
 			if (ptr_to_func != NULL)
 			{
-			printed_length += ptr_to_func(args);
-			format_iter++;
+				error_flag = ptr_to_func(args);
+				if (error_flag == -1)
+					return (-1);
+
+				printed_length += error_flag;
+				format_iter++;
 			}
 			else
 			{
-			printed_length += _putchar(format[format_iter]);
+			error_flag = _putchar(format[format_iter]);
+				if (error_flag == -1)
+					return (-1);
+			printed_length++;
+			if (format[format_iter] == format[format_iter + 1])
+				format_iter++;
 			}
 		}
 		else
