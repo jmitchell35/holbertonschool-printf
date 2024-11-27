@@ -6,9 +6,10 @@
 #include<stdarg.h>
 #include<unistd.h>
 
-int _putchar(char *c);
-int print_str(char *str);
-int (*get_print_op(char *s))(char *);
+int _putchar(char c);
+int print_str(va_list args);
+int print_char(va_list args);
+int (*get_print_op(char s))(va_list);
 int _printf(const char *format, ...);
 int _strlen(char *s);
 
