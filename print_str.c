@@ -9,9 +9,10 @@
 * Return: number of bytes printed
 */
 
-int print_str(char *str)
+int print_str(va_list args)
 {
 	int length = 0;
+	char *str = va_args(args, char *);
 
 	while (*str)
 	{
