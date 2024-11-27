@@ -21,7 +21,7 @@ int _strlen(char *s);
 typedef struct print_t
 {
 	char *specifier;
-	int (*ptr_to_print_func)(char *);
+	int (*ptr_to_print_func)(va_list);
 } print_t;
 
 #endif
