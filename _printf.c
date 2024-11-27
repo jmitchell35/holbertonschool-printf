@@ -25,7 +25,6 @@ int _printf(const char *format, ...)
 			{
 			printed_length += _putchar(format[format_iter]);
 			}
-			
 		}
 		else
 			printed_length += _putchar(format[format_iter]);
