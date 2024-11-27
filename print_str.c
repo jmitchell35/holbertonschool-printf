@@ -16,7 +16,7 @@ int print_str(va_list args)
 
 	while (*str)
 	{
-		length += _putchar(str);
+		length += _putchar(*str);
 		str++;
 	}
 	return (length);
