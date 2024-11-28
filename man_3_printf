@@ -29,11 +29,10 @@ d : Print a decimal (base 10) number
 i : Print an integer in base 10
 
 .SH RETURN VALUE
-The _printf function allows displaying a string by handling format specifiers (such as %d, %s, etc.) to print various data types.
+The _printf function allows printing a string by handling format specifiers (such as %d, %s, etc.) to print various data types.
 Returns -1 if error or format is NULL. Otherwise returns number of characters printed.
 
 .SH EXAMPLES
-Voici un exemple d'utilisation :
 .RS
 .PP
 _printf("%c%c%c%c%c\n", 'H', 'e', 'l', 'l', 'o');
