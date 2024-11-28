@@ -42,6 +42,6 @@ Hello
 _printf("%s\n", "Hello, world !");
 Hello, world !
 
-.SH SEE ALSO
-man(1), autre_man_page(5)
+.SH DATE
+29 Novembre 2024
 
