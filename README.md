@@ -1,6 +1,6 @@
 # holbertonschool C - printf
 
-Description:
+Description :
 Group project consisting in coding our own printf function in C
 The function printf in C is a part of the standard library stdio.h and is used to output formatted text to the standard output, usually the screen.
 It is widelly used in C programs to display messages, computation results, or even for debugging purposes.
@@ -20,4 +20,12 @@ The prototypes of all our functions should be included in our header file called
 Don't forget to push our header file.
 All our header files should be include guarded.
 We provide our _putchar function for this project.
+
+Examples :
+_printf("String:[%s]\n", "I am a string !");
+Result : String:[I am a string !]
+_printf("Percent:[%%]\n");
+Result : Percent:[%]
+_printf("Char: %c, String: %s\n", 'A', "Test");
+Result : Char: A, String: Test
 
