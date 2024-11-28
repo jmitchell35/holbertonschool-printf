@@ -1,0 +1,39 @@
+.TH _PRINTF(3)
+.SH _PRINTF
+_printf - prints string interpreting included specifiers
+
+
+.SH SYNOPSIS
+.B nom
+[\fIoptions\fR] [\fIarguments\fR]
+
+.SH DESCRIPTION
+La fonction \fInom\fR fait quelque chose de très utile. Elle prend en entrée
+des paramètres et renvoie une valeur.
+
+.SH OPTIONS
+.TP
+\fB-option\fR
+Description de l'option.
+
+.TP
+\fB-autre-option\fR
+Autre description d'option.
+
+.SH EXAMPLES
+Voici un exemple d'utilisation :
+.RS
+.PP
+$ nom -option argument
+.RE
+
+.SH RETURN VALUE
+La fonction renvoie un entier qui peut être :
+
+.TP
+0  Si tout s'est bien passé.
+.TP
+-1 En cas d'erreur.
+
+.SH SEE ALSO
+man(1), autre_man_page(5)
