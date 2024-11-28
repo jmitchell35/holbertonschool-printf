@@ -36,9 +36,11 @@ The _printf function allows displaying a string by handling format specifiers (s
 Voici un exemple d'utilisation :
 .RS
 .PP
-
+_printf("%c%c%c%c%c\n", 'H', 'e', 'l', 'l', 'o');
+Hello
 .RE
-
+_printf("%s\n", "Hello, world !");
+Hello, world !
 
 .SH SEE ALSO
 man(1), autre_man_page(5)
