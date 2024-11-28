@@ -21,28 +21,24 @@ it delegates its handling to a specific function through a specifier management 
 If an invalid format specifier is encountered or if an error occurs during printing, the function returns -1.
 Otherwise, it returns the total number of characters printed.
 
-.SH OPTIONS
-.TP
-\fB-specifiers used : (c, s ,%, d, i)\fR
+specifiers used : (c, s ,%, d, i)
 
-.TP
-\fB-c\fR
-Autre description d'option.
+c : Print a single character
+s : Print a string of characters 
+% : A '%' is written. No argument is converted the complete conversion specification is '%%'
+d : Print a decimal (base 10) number
+i : Print an integer in base 10
+
+.SH RETURN VALUE
+The _printf function allows displaying a string by handling format specifiers (such as %d, %s, etc.) to print various data types
 
 .SH EXAMPLES
 Voici un exemple d'utilisation :
 .RS
 .PP
-$ nom -option argument
+
 .RE
 
-.SH RETURN VALUE
-La fonction renvoie un entier qui peut être :
-
-.TP
-0  Si tout s'est bien passé.
-.TP
--1 En cas d'erreur.
 
 .SH SEE ALSO
 man(1), autre_man_page(5)
