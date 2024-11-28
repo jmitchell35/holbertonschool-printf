@@ -23,11 +23,10 @@ Otherwise, it returns the total number of characters printed.
 
 .SH OPTIONS
 .TP
-\fB-option\fR
-Description de l'option.
+\fB-specifiers used : (c, s ,%, d, i)\fR
 
 .TP
-\fB-autre-option\fR
+\fB-c\fR
 Autre description d'option.
 
 .SH EXAMPLES
