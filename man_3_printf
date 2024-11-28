@@ -1,4 +1,3 @@
-.TH _PRINTF(3)
 .SH _PRINTF
 _printf - print string interpreting included specifiers
 
