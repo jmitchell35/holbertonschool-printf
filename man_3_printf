@@ -1,15 +1,25 @@
 .TH _PRINTF(3)
 .SH _PRINTF
-_printf - prints string interpreting included specifiers
+_printf - print string interpreting included specifiers
 
 
 .SH SYNOPSIS
-.B nom
-[\fIoptions\fR] [\fIarguments\fR]
+.B _printf
+#include"main.h"
+int _printf(const char *format, ...);
 
 .SH DESCRIPTION
-La fonction \fInom\fR fait quelque chose de très utile. Elle prend en entrée
-des paramètres et renvoie une valeur.
+_printf -- Displays a string while interpreting the included format specifiers.
+
+The _printf function allows displaying a string by handling format specifiers (such as %d, %s, etc.) to print various data types.
+It takes a first argument, format, a string that may contain format specifiers,
+and a variable number of additional arguments corresponding to these specifiers.
+
+The function iterates through the format string, and when a format specifier is found, 
+it delegates its handling to a specific function through a specifier management mechanism.
+
+If an invalid format specifier is encountered or if an error occurs during printing, the function returns -1.
+Otherwise, it returns the total number of characters printed.
 
 .SH OPTIONS
 .TP
