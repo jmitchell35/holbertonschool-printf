@@ -16,7 +16,8 @@ int (*get_print_op(char s))(va_list)
 		};
 	int print_ops_iter;
 
-	for (print_ops_iter = 0; print_ops[print_ops_iter].specifier ; print_ops_iter++)
+	for (print_ops_iter = 0; print_ops[print_ops_iter].specifier;
+						print_ops_iter++)
 	{
 		if (s == *print_ops[print_ops_iter].specifier)
 		{
