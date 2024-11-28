@@ -11,7 +11,7 @@ int print_str(va_list args);
 int print_char(va_list args);
 int (*get_print_op(char s))(va_list);
 int _printf(const char *format, ...);
-int _strlen(char *s);
+int handle_specifier(const char *format, int *format_iter, va_list args);
 
 /**
  *struct print_t - associer specifier au pointeur de fonction
