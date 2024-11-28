@@ -47,4 +47,12 @@ int print_str(va_list args)
 	}
 	return (length);
 }
-
+/**
+  * print_percent - prints '%'
+  * @args: para;eter of va_list type
+  * Return: ! if success, or -1
+  */
+int print_percent(va_list args __attribute__((unused)))
+{
+	return (_putchar('%'));
+}

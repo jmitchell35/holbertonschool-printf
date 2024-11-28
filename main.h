@@ -9,6 +9,7 @@
 int _putchar(char c);
 int print_str(va_list args);
 int print_char(va_list args);
+int print_percent(va_list args);
 int print_int(va_list args);
 int (*get_print_op(char s))(va_list);
 int _printf(const char *format, ...);
@@ -26,3 +27,4 @@ typedef struct print_t
 } print_t;
 
 #endif
+

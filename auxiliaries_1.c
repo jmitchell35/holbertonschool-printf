@@ -10,6 +10,7 @@ int (*get_print_op(char s))(va_list)
 	print_t print_ops[] = {
 		{"c", print_char},
 		{"s", print_str},
+		{"%", print_percent},
 		{"d", print_int},
 		{"i", print_int},
 		{NULL, NULL}
@@ -38,12 +39,7 @@ int handle_specifier(const char *format, int *format_iter, va_list args)
 	int error_flag = 0;
 	int (*ptr_to_func)(va_list);
 
-	if (format[*format_iter + 1] == '%')
-	{
-		error_flag = _putchar('%'); /* Handling %% */
-		(*format_iter) += 2; /* Skipping both % to next char */
-	}
-	else if (format[*format_iter + 1])
+	if (format[*format_iter + 1])
 	{
 		ptr_to_func = get_print_op(format[*format_iter + 1]);
 		/*Checking for spec match through matching function get_p_f*/
