@@ -11,8 +11,9 @@ int print_number_rec(int number)
 	if (number / 10 > 0)
 	{
 	printed_length += print_number_rec(number / 10);
-	printed_length += _putchar('0' + (number % 10));
 	}
+
+	printed_length += _putchar('0' + (number % 10));
 	return (printed_length);
 }
 /**
