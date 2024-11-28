@@ -8,7 +8,7 @@ _printf - print string interpreting included specifiers
 int _printf(const char *format, ...);
 
 .SH DESCRIPTION
-_printf -- Displays a string while interpreting the included format specifiers.
+_printf -- Print a string while interpreting the included format specifiers.
 
 The _printf function allows displaying a string by handling format specifiers (such as %d, %s, etc.) to print various data types.
 It takes a first argument, format, a string that may contain format specifiers,
