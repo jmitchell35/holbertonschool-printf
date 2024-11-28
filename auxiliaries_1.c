@@ -61,7 +61,7 @@ int handle_specifier(const char *format, int *format_iter, va_list args)
 			(*format_iter) += 2; /*Skipping both*/
 		}
 	}
-	else if (*format_iter == 0)
+	else if (*format_iter == 0 && (format[1] == '\0'))
 		error_flag = -1;
 	else
 	{
