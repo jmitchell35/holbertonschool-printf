@@ -29,3 +29,8 @@ Result : Percent:[%]
 _printf("Char: %c, String: %s\n", 'A', "Test");
 Result : Char: A, String: Test
 
+Man page :
+Here is our man page of our function '_printf' : [man_3_printf](man_3_printf)
+
+
+
