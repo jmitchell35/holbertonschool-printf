@@ -23,15 +23,20 @@ Otherwise, it returns the total number of characters printed.
 
 specifiers used : (c, s ,%, d, i)
 .TP
-.B c : Print a single character
+.B c :
+Print a single character
 .TP
-.B s : Print a string of characters 
+.B s :
+Print a string of characters 
 .TP
-.B % : A '%' is written. No argument is converted the complete conversion specification is '%%'
+.B % :
+A '%' is written. No argument is converted the complete conversion specification is '%%'
 .TP
-.B d : Print a decimal (base 10) number
+.B d :
+Print a decimal (base 10) number
 .TP
-.B i : Print an integer in base 10
+.B i :
+Print an integer in base 10
 
 .SH RETURN VALUE
 The _printf function allows printing a string by handling format specifiers (such as %d, %s, etc.) to print various data types.
