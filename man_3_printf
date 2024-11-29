@@ -43,17 +43,19 @@ The _printf function allows printing a string by handling format specifiers (suc
 Returns -1 if error or format is NULL. Otherwise returns number of characters printed.
 
 .SH EXAMPLES
-.RS
 .PP
 _printf("%c%c%c%c%c\n", 'H', 'e', 'l', 'l', 'o');
+.PP
 Hello
+
 .RE
 _printf("%s\n", "Hello, world !");
+.PP
 Hello, world !
 
 .SH DATE
 29 Novembre 2024
 
 .SH AUTHORS
-Julian MITCHELL(GH jmitchell35) and Damien BOULET(GH Damien353)
+Julian MITCHELL (GH jmitchell35) and Damien BOULET (GH Damien353)
 
