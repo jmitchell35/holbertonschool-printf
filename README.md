@@ -85,4 +85,5 @@ Unknown:[%r]
 Flowchart :
 Here is a flowchart of our '_printf' function :
 [Flowchart of _printf](https://app.diagrams.net/#G1U4Gm3_DjQ5njLOEj71ezO5NFpmzPwl-J#%7B%22pageId%22%3A%221Ge7Q-dWyH-wWi8jwrI0%22%7D)
+![image](https://github.com/user-attachments/assets/cf57f498-604e-4099-a263-24488fd232b7)
 
