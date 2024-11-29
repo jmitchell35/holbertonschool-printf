@@ -46,12 +46,15 @@ Returns -1 if error or format is NULL. Otherwise returns number of characters pr
 .PP
 _printf("%c%c%c%c%c\n", 'H', 'e', 'l', 'l', 'o');
 .PP
+.RS
 Hello
 
 .RE
 _printf("%s\n", "Hello, world !");
 .PP
+.RS
 Hello, world !
+.RE
 
 .SH DATE
 29 Novembre 2024
